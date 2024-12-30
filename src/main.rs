@@ -58,7 +58,7 @@ fn main() {
         match Command::new("notify-send")
             .arg("-u")
             .arg("normal")
-            .arg(&format!("🔋 Battery: {}% ({})", percentage, time_remaining))
+            .arg(&format!("🔋 ← {}% ({})", percentage, time_remaining))
             .spawn() {
                 Ok(_) => (),
                 Err(e) => eprintln!("Failed to send notification: {}", e)
