@@ -1,6 +1,6 @@
 # 🔋 Notifier
 
-Notifies current status of battery. I use it to bind it in i3 config as I run
+Notifies current status of battery. I use it to bind it in i3 config.
 
 
 ## Dependencies
