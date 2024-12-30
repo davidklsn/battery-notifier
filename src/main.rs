@@ -48,11 +48,7 @@ fn main() {
 
     if let Some(captures) = re.captures(&output_str) {
         let percentage = captures.name("percentage").unwrap().as_str();
-        let time_remaining = captures.name("time").unwrap().as_str();
-
-        println!("Battery Percentage: {}%", percentage);
-        println!("Time Remaining: {}", time_remaining);
-    
+        let time_remaining = captures.name("time").unwrap().as_str();    
     
         // Send a notification using `notify-send`
         match Command::new("notify-send")
